@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goated Ttitle</title>
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="fancydancying.css" /> 
 
@@ -23,6 +24,47 @@
     </form>
     <p id="demo">Test time</p>
     <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="newTask">
+        <h2>Create a new task</h2>
+        
+            <form id="newTask-Form">
+                <input 
+                    type="text"
+                    id="newTask-Input"
+                    placeholder="Enter a task"/>
+                
+                <input 
+                    type="submit" 
+                    id="newTask-Submit"
+                    value="Add a task"/>
+
+            </form>
+    </div>
+    <div class="taskList">
+        <h2>Task to be completed</h2>
+
+        <div id="tasks">
+            <div class="task">
+                <div class="content">
+                    <input 
+                        type="text"
+                        class="text"
+                        value="shiny task"
+                        readonly
+                    />
+                </div>
+                <div class="actions">
+                    <button class="editTask">Edit</button>
+                    <button class="deleteTask">Delete</button>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+
     
 
 </body>
