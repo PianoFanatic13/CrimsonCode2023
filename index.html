@@ -18,20 +18,28 @@
     <div class="newTask">
         <h2>Create a new task</h2>
         <div>
-            <form id="newTask-Form">
+            <form id="newTask-Form" action="newTask()">
                 <div>
                     <input 
                     type="text"
                     id="newTask-Input"
-                    placeholder="Enter a task"/>
+                    placeholder="Enter task name"/>
                 </div>
                 <div>
                     <p>Select category</p>
-                    <select name="categories">
+                    <select name="categories" id="newTask-Category">
                         <option value="notecards">Notecards</option>
                         <option value="quiz">Quiz</option>
                         <option value="break">Break</option>
-                      </select>
+                    </select>
+                </div>
+                <div>
+                    <input 
+                        id="newTask-Time"
+                        type="number"
+                        min="0"
+                        placeholder="Number of minutes"/>
+                        
                 </div>
                 <div>
                     <input 
