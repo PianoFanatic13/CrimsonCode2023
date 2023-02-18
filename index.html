@@ -13,19 +13,35 @@
 <body>
     <div class="newTask">
         <h2>Create a new task</h2>
-        
+        <div>
             <form id="newTask-Form">
-                <input 
+                <div>
+                    <input 
                     type="text"
                     id="newTask-Input"
                     placeholder="Enter a task"/>
-                
-                <input 
+                </div>
+                <div>
+                    <label for="category"></label>
+                    <input
+                    list="categories"
+                    id="newTask-Category"
+                    name="category"/>
+                    <datalist id=""categories>
+                        <option value="Notecards">
+                        <option value="Quiz">
+                        <option value="Break">
+                    </datalist>
+                    
+                </div>
+                <div>
+                    <input 
                     type="submit" 
                     id="newTask-Submit"
                     value="Add a task"/>
-
+                </div>
             </form>
+        </div>
     </div>
     <div class="taskList">
         <h2>Task to be completed</h2>
