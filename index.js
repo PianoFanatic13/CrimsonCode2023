@@ -1,6 +1,5 @@
 function getTime()
-        {
-            var inputTime = document.getElementById("getName");
-            
-            console.log(inputTime);
-        }
+{
+    var inputTime = document.getElementById("getTime").value;
+    
+}
