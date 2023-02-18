@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+
 </head>
-<p id = "test"></p>
 <body>
+    <form>
+        <input type = "text" id = "getName"><br>
+    </form>
     <script>
-        document.getElementById("test").innerHTML = "hello"
+        function getTime()
+        {
+            var inputTime = document.getElementById("getName");
+            console.log(inputTime);
+        }
     </script>
 
 </body>
