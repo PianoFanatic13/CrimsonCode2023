@@ -6,23 +6,34 @@ body {
 }
 
 h2 {
+    display: inline-flex; 
+    justify-content: center;
+    box-pack: center;
+    text-align: center;
     color: black;
     font-size: 60px;
-    text-align: center;
     border: 2px dotted black;
     border-radius: 12px;
     text-shadow: 3px 3px 9px rgb(254, 157, 173);
-    margin-right: 610px;
-    margin-left: 610px;
     position: relative;
 }
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 60px;
+    text-shadow: 3px 3px 9px rgb(254, 157, 173);
+    padding: 2px 2px;
+}
+
 
 .newtasks {
     color: black;
     text-align: center;
     font-size: 35px;
     margin-bottom: 25px;
-    text-decoration: rgb(255, 178, 191) wavy underline;
+    text-decoration: underline;
 }
 
 .tasksleft {
