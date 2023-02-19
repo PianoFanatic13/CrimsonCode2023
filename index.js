@@ -40,8 +40,11 @@ window.addEventListener('load', () => {
             taskContent.append(delContent);
 
             tasklist.appendChild(taskContent);
-
+            
             numTasks++;
+            delContent.addEventListener('click', (e) => {
+                tasklist.removeChild(taskContent);
+            });
         }
     });
 });
