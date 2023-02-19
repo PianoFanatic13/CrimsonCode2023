@@ -18,9 +18,19 @@
             <a href="notecard.html">Notecards</a>
         </p>
     </div>
-    <div class="nextCard">
-        <button onclick="nextCard()">➡</button>
+    <div class="displayNoteCard">
+        <div>   
+            <button onclick="prevCard()">⬅</button>
+            <button onclick="nextCard()">➡</button>
+        </div>
+        <div>
+            <form id="noteCard">
+                <input
+                type="text"
+                id="newNoteCard"
+                placeholder="Enter a term/question"/>
+            </form>
+        </div>
     </div>
-    
 </body>
 </html>
