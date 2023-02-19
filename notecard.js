@@ -1,9 +1,9 @@
 const notecard = document.querySelector("#displayNoteCard");
 
+let userIndex = 0;
 let noteCards = [];
 
 function newCard(){
-    alert("newCard called");
 
     const cardElements = document.createElement('div');
     const query = document.createElement('input');
@@ -25,6 +25,12 @@ function newCard(){
 document.querySelector("#displayNoteCard").addEventListener("submit", (event) => {
     event.preventDefault();
 
+    if (noteCards[userIndex] = null){
+        newCard();
+    }
+    else {
+        
+    }
     
 
 });
