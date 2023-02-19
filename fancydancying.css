@@ -2,6 +2,7 @@
 
 body {
     background-color: lightblue;
+    position: relative;
 }
 
 h2 {
@@ -13,6 +14,7 @@ h2 {
     text-shadow: 3px 3px 9px rgb(254, 157, 173);
     margin-right: 610px;
     margin-left: 610px;
+    position: relative;
 }
 
 
