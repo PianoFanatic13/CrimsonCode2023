@@ -3,14 +3,18 @@ function newTask()
     const inputName = document.querySelector("#newTask-Name");
     const inputTime = document.querySelector("#newTask-Time");
     
-    form.addEventListener('#addTask', (e) => {
-        e.preventDefault(); 
+    document.querySelector("#newTask-Form").addEventListener("submit", function(event){
+        event.preventDefault()
         const name = inputName.value;
         const time = inputTime.value;
         
-        const p1 = document.createElement('p1');
-        p1.innerHTML = name;
-        document.body.append(p1);
+        const p = document.createElement('p');
+        p.innerHTML = name;
+        document.body.append(p);
+      });
+      
+
+    
         
-    });
+    
 }
