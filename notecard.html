@@ -29,7 +29,8 @@
 
 
     <div>
-        <h1>Notecards</h1>
+        <h1 id="cardSide"></h1>
+        <p id="coutIndex"></p>
         <div class="leftrightbuttoncontainer">   
             <button id="prevCard">⬅</button>
             <button id="nextCard">➡</button>
@@ -37,16 +38,16 @@
         <div id="displayNoteCard">
             <form>
                 <input 
-                id="addTerm"
-                type="text"
-                placeholder="Enter a term/question"
+                    id="addTerm"
+                    type="text"
+                    placeholder="Enter a term/question"
                 />
-                <input
-                class="edit"
-                id="saveTerm"
-                type="button"
-                value="💾"
-                />
+                <button
+                    class="edit"
+                    id="saveTerm">💾</button>
+                <button
+                    class="'edit"
+                    id="flipCard">↩</button>
             </form>
         </div>
 

@@ -53,6 +53,7 @@ document.querySelector("#newTask-Form").addEventListener("submit", (event) => {
         });
     }
 });
+
 // timer
 var start = document.getElementById('start');
 var reset = document.getElementById('reset');
@@ -87,12 +88,19 @@ function stopInterval() {
 
 
 start.addEventListener('click', function(){
-    function startInterval(){
-        startTimer = setInterval(function() {
-            timer();
-        }, 1000);
+    if(document.getElementById('start').innerText == "▶"){
+        function startInterval(){
+            startTimer = setInterval(function() {
+                timer();
+            }, 1000);
+        }
+        document.getElementById('start').innerText = "⏸";
+        startInterval();
+    } else {
+        document.getElementById('start').innerText = "▶";
+        stopInterval();
     }
-    startInterval();
+   
 })
 
 reset.addEventListener('click', function(){
@@ -102,4 +110,5 @@ reset.addEventListener('click', function(){
     //calls the function for when reset button is called
     stopInterval()
 })
+
 
