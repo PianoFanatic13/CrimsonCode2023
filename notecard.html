@@ -29,6 +29,29 @@
 
 
     <div>
+        <div class="createNoteCard">
+            <form id="newCard">
+                <div>
+                    index: 
+                    <input
+                    type="text"
+                    id="userIndex"
+                    readonly="readonly"
+                    value="0"/>
+                    <input 
+                    type="text"
+                    id="newTerm"
+                    placeholder="Enter the term/question"/>
+                    <input 
+                    type="text"
+                    id="newAnswer"
+                    placeholder="Enter the Answer"/>
+                    <button
+                    class="edit"
+                    id="saveTerm">💾</button>
+                </div> 
+            </form>
+        </div>
         <h1 id="cardSide"></h1>
         <div class="leftrightbuttoncontainer">   
             <button id="prevCard">⬅</button>
@@ -39,12 +62,8 @@
                 <input 
                     id="addTerm"
                     type="text"
-                    placeholder="Enter a term/question"
                 />
         
-                <button
-                    class="edit"
-                    id="saveTerm">💾</button>
                 <button
                     class="edit"
                     id="flipCard">↩</button>
