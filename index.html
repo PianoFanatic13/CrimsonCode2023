@@ -24,53 +24,73 @@
 
 	<div class="newTask">
         
-		<div class="even-columns">
-	
-			<div class="col"></div>
-	
-			<div class="col">
-				<div class="taskformat" id="newtasks"> Add Task</div>
-				<form id="newTask-Form">
-					<div>
-						<input 
-						type="text"
-						id="newTask-Name"
-						placeholder="Enter task name"/>
-						<button id="addTask">Add new task</button>
-					</div>
-					<div class="taskformat" id="non-completed_tasks">Tasks</div> 
-				</form>
-				<div class="taskList">
-				
-					<div id="tasks" class="taskformat">
-						<!--New Tasks load here-->
-					</div>                   
-				</div>
-			</div>
-	
-			<div class="col">
-				<div class="time-container">
-					<div class="even-columns2">
-						
-						<div class="col2"> <div id="time-hours">Hours</div> <br /><input id="hour" type="number" max="99" min="0" value="0" class="time">
-						</div>
-	
-						<div class="col2"> <div id="time-minutes">Minutes</div> <br /><input id="minute" type="number" max="60" min="0" value="0" class="time">
-						<br />  
-						<div class="timerbuttoncontainer">
-						<button id="start" class="btn">▶</button>
-						<button id="reset" class="btn">🔄</button>
-						</div>
-						</div>
-						
-						<div class="col2"> <div id="time-seconds">Seconds</div> <br /><input id="sec" type="number" max="60" min="0" value="0" class="time">
-						</div>
-						
-					</div>
-	
-				</div>
-			</div>
-		</div>
+    
+ 
+            
+    
+    <div class="newTask">
+        
+    <div class="even-columns">
+
+        <div class="col"></div>
+
+        <div class="col">
+            <div class="taskformat" id="newtasks"> Add Task</div>
+            <form id="newTask-Form">
+                <div>
+                    <input 
+                    type="text"
+                    id="newTask-Name"
+                    placeholder="Enter task name"/>
+                    <button id="addTask">Add new task</button>
+                </div>
+                <div class="taskformat" id="non-completed_tasks">Tasks</div> 
+            </form>
+            <div class="taskList">
+            
+                <div id="tasks" class="taskformat">
+                    <!--New Tasks load here-->
+                </div>                   
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="time-container">
+                <div id="timerthing">Timer</div>
+                <div class="even-columns2">
+                    
+                    <div class="col2"> <div id="time-hours">Hours</div> <br /><input id="hour" type="number" max="99" min="0" value="0" class="time">
+                    </div>
+
+                    <div class="col2"> <div id="time-minutes">Minutes</div> <br /><input id="minute" type="number" max="60" min="0" value="0" class="time">
+                    </div>
+                    
+                    <div class="col2"> <div id="time-seconds">Seconds</div> <br /><input id="sec" type="number" max="60" min="0" value="0" class="time">
+                    </div>
+                    
+                </div>
+                <div class="timerbuttoncontainer">
+                    <button id="start" class="btn">▶</button>
+                    <button id="reset" class="btn">🔄</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--
+    <p id="hour-label" class="label">Hours</p>
+    <p id="min-label" class="label">Minutes</p>
+    <p id="sec-label" class="label">Seconds</p>
+    <input id="hour" type="number" max="99" min="0" value="0" class="time">
+    <p id="p1" class="semicolon">:</p>
+    <input id="minute" type="number" max="60" min="0" value="0" class="time">
+    <p id="p2" class="semicolon">:</p>
+    <input id="sec" type="number" max="60" min="0" value="0" class="time">
+    <button id="start" class="btn">▶</button>
+    <button id="reset" class="btn">🔄</button>
+-->
+        
+    
     <script src="index.js"></script>
 </body>
 </html>
