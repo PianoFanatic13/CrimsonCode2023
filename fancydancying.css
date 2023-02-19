@@ -164,7 +164,7 @@ a:link {
 }
 
 #hour {
-    font-size: 35px;
+    font-size: 25px;
     border: 6px;
     border-radius: 3px;
     height: 60px;
@@ -174,7 +174,7 @@ a:link {
 }
 
 #minute {
-    font-size: 35px;
+    font-size: 25px;
     border: 6px;
     border-radius: 3px;
     height: 60px;
@@ -186,7 +186,7 @@ a:link {
 }
 
 #sec {
-    font-size: 35px;
+    font-size: 25px;
     border: 6px;
     border-radius: 3px;
     height: 60px;
