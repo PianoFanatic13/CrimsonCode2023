@@ -11,3 +11,15 @@ h2 {
     border: 2px dotted 
 }
 
+.titles {
+    display: flex;
+    background: white;
+}
+
+.titles > div{
+    background-color: peru;
+    margin: 20px;
+    padding: 15px;
+    font-size: 30px;
+}
+
