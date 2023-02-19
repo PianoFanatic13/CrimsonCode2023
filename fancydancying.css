@@ -19,7 +19,6 @@ h2 {
     font-size: 65px;
     border: 2px dotted black;
     border-radius: 12px;
-    text-shadow: 3px 3px 9px rgb(254, 157, 173);
     position: relative;
 }
 
@@ -51,7 +50,7 @@ h2 {
 
 
 #tasks {    
-    padding-bottom: 750px
+    padding-bottom: 740px
 }
 
 
