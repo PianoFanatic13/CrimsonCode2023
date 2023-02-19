@@ -46,15 +46,15 @@ h1 {
 }
 
 #prevCard {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 123px;
+    padding-right: 123px;
     font-size: x-large;
     
 }
 
 #nextCard {
-    padding-right: 130px;
-    padding-left: 130px;
+    padding-right: 123px;
+    padding-left: 123px;
     font-size: x-large;
 }
 
