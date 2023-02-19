@@ -70,6 +70,8 @@ a:link {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     background-color: rgb(216, 133, 145);
+    font-size: 50px;
+    padding-top: 12px;
 }
 
 .taskformat {
@@ -79,15 +81,24 @@ a:link {
     text-decoration: underline;
 
     background-color: rgb(216, 133, 145);
-/*
-    margin-left: 500px;
-    margin-right: 500px;   */ 
 }
+
 
 #tasks {    
-    padding-bottom: 740px
+    padding-bottom: 740px;
+    height: 32px;
+    font-size: 18px;
 }
 
+#addTask {
+    height: 37px;
+    font-size: 22px;
+}
+
+#newTask-Name {
+    height: 37px;
+    font-size: 22px;
+}
 
 #newTask-Form {
     justify-content: center;
@@ -95,9 +106,11 @@ a:link {
     background-color: rgb(216, 133, 145);
     padding-top: 25px;
     padding-bottom: 25px;
-/*
-    margin-left: 500px;
-    margin-right: 500px;  */  
+}
+
+#non-completed_tasks {
+    margin-top: 25px;
+    font-size: 40px;
 }
 
 .taskList {
@@ -127,7 +140,6 @@ a:link {
 
 #time-minutes {
     font-size: 40px;
-    margin-left: 12px;
 }
 
 #time-seconds {
@@ -152,7 +164,6 @@ a:link {
     width: 75px;
     padding: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
     text-align: center;
 }
 
@@ -175,11 +186,17 @@ a:link {
     margin-right: 50px;
     width: 65px;
     height: 65px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #reset {
     width: 65px;
     height: 65px;
     font-size: 40px;
+}
+
+#timerthing {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
 }

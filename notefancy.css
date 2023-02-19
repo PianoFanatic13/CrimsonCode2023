@@ -60,13 +60,16 @@ h1 {
 
 #displayNoteCard {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-left: 75px;
 }
 
 #addTerm {
-    padding: 140px;
+    height: 300px;
+    width: 540px;
     font-size:x-large;
     justify-items: center;
+    resize: none;
 }
 
