@@ -42,7 +42,19 @@ window.addEventListener('load', () => {
             tasklist.appendChild(taskContent);
             
             numTasks++;
-            delContent.addEventListener('click', (e) => {
+            
+            editContent.addEventListener('click', (event) =>{
+                if (editContent.innerText == "+") {
+                    editContent.innerText = "Save";
+                    textBox.removeAttribute("readonly");
+                    textBox.focus();
+                } else {
+                    editContent.innerText = "+";
+                    textBox.setAttribute("readonly", "readonly");
+                }
+            })
+
+            delContent.addEventListener('click', (event) => {
                 tasklist.removeChild(taskContent);
             });
         }
