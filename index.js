@@ -1,5 +1,6 @@
-function newTask()
+function main()
 {
+    const tasklist = document.querySelector("#tasks")
     const inputName = document.querySelector("#newTask-Name");
     const inputTime = document.querySelector("#newTask-Time");
     
@@ -8,13 +9,14 @@ function newTask()
         const name = inputName.value;
         const time = inputTime.value;
         
-        const paragraph = document.createElement('p');
-        paragraph.innerText = name;
-        document.body.appendChild(paragraph);
-      });
-      
+        const taskContent = document.createElement('div');
 
-    
-        
-    
+        const textBox = document.createElement('input');
+        textBox.classList.add('text');
+        textBox.type = "text";
+        textBox.value = name;
+        textBox.setAttribute('readonly', 'readonly');
+
+        tasklist.appendChild(textBox);
+      });
 }
