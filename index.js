@@ -8,9 +8,9 @@ function newTask()
         const name = inputName.value;
         const time = inputTime.value;
         
-        const p = document.createElement('p');
-        p.innerHTML = name;
-        document.body.append(p);
+        const paragraph = document.createElement('p');
+        paragraph.innerText = name;
+        document.body.appendChild(paragraph);
       });
       
 
