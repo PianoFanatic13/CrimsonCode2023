@@ -24,48 +24,9 @@ h2 {
 }
 
 
-#newtasks {    
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    background-color: rgb(216, 133, 145);
-}
-
-.taskformat {
-    color: black;
-    text-align: center;
-    font-size: 35px;
-    text-decoration: underline;
-
-    background-color: rgb(216, 133, 145);
-
-    margin-left: 500px;
-    margin-right: 500px;    
-}
-
-
-#tasks {    
-    padding-bottom: 740px
-}
-
-
-#newTask-Form {
-    text-align: center;
-
-    background-color: rgb(216, 133, 145);
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-    margin-left: 500px;
-    margin-right: 500px;    
-}
-
-.taskList {
-    text-align: center;
-    font-size: 25px;
-}
 
 #todo-link {
-    background-color:rgb(54, 87, 162);
+    background-color:rgb(71, 106, 188);
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -75,7 +36,7 @@ h2 {
 }
 
 #notecards{
-    background-color:rgb(54, 87, 162);
+    background-color:rgb(71, 106, 188);
     text-align: right;
     padding-top: 5px;
     padding-left: 10px;
@@ -98,4 +59,127 @@ h2 {
 
 a:link {
     text-decoration: none;
+}
+
+
+.timetaskflexcontainer {
+    display: flex;
+}
+
+#newtasks {    
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: rgb(216, 133, 145);
+}
+
+.taskformat {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+
+    background-color: rgb(216, 133, 145);
+/*
+    margin-left: 500px;
+    margin-right: 500px;   */ 
+}
+
+#tasks {    
+    padding-bottom: 740px
+}
+
+
+#newTask-Form {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(216, 133, 145);
+    padding-top: 25px;
+    padding-bottom: 25px;
+/*
+    margin-left: 500px;
+    margin-right: 500px;  */  
+}
+
+.taskList {
+    text-align: center;
+    font-size: 25px;
+}
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+.time-container {
+    padding-left: 50px;
+}
+
+.even-columns2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+#time-hours {
+    font-size: 40px;
+}
+
+#time-minutes {
+    font-size: 40px;
+    margin-left: 12px;
+}
+
+#time-seconds {
+    font-size: 40px;
+}
+
+#hour {
+    font-size: 35px;
+    border: 6px;
+    border-radius: 3px;
+    height: 60px;
+    width: 75px;
+    padding: 20px;
+    text-align: center;
+}
+
+#minute {
+    font-size: 35px;
+    border: 6px;
+    border-radius: 3px;
+    height: 60px;
+    width: 75px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#sec {
+    font-size: 35px;
+    border: 6px;
+    border-radius: 3px;
+    height: 60px;
+    width: 75px;
+    padding: 20px;
+    text-align: center;
+}
+
+.timerbuttoncontainer {
+    display: flex;
+    justify-items: center;
+}
+
+#start {
+    margin-right: 50px;
+    width: 65px;
+    height: 65px;
+    font-size: 50px;
+}
+
+#reset {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
 }
