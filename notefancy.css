@@ -63,14 +63,14 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 75px;
+    padding-left: 23px;
 }
 
 #addTerm {
     height: 300px;
     width: 540px;
     font-size: 45px;
-    justify-content: center;
+    justify-content: right;
     text-align: center;
     resize: none;
 }

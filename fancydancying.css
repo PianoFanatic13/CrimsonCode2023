@@ -154,11 +154,12 @@ a:link {
 
 #time-minutes {
     font-size: 40px;
-    margin-left: 12px;
+    text-align: left;
 }
 
 #time-seconds {
     font-size: 40px;
+    text-align: right;
 }
 
 #hour {
@@ -180,7 +181,7 @@ a:link {
     padding: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #sec {
