@@ -22,11 +22,11 @@ document.querySelector("#newTask-Form").addEventListener("submit", (event) => {
 
         const editContent = document.createElement('button');
         editContent.classList.add('edit');
-        editContent.innerText = '+';
+        editContent.innerText = '📝';
 
         const delContent = document.createElement('button');
         delContent.classList.add('delete');
-        delContent.innerText = '-';
+        delContent.innerText = '✅';  
 
         
         taskContent.append(textBox);
@@ -38,12 +38,12 @@ document.querySelector("#newTask-Form").addEventListener("submit", (event) => {
         numTasks++;
         
         editContent.addEventListener('click', (event) =>{
-            if (editContent.innerText == "+") {
-                editContent.innerText = "Save";
+            if (editContent.innerText == "📝") {
+                editContent.innerText = "💾";
                 textBox.removeAttribute("readonly");
                 textBox.focus();
             } else {
-                editContent.innerText = "+";
+                editContent.innerText = "📝";
                 textBox.setAttribute("readonly", "readonly");
             }
         })
