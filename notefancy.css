@@ -42,7 +42,7 @@ h1 {
 .leftrightbuttoncontainer {
     display: flex;
     justify-content: center;
-    margin-left: 7px;
+    margin-right: 23px;
 }
 
 #prevCard {
