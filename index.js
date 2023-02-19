@@ -2,20 +2,16 @@ window.addEventListener('load', () => {
 
     const tasklist = document.querySelector("#tasks")
     const inputName = document.querySelector("#newTask-Name");
-    const inputTime = document.querySelector("#newTask-Time");
     let numTasks = 0;
     
     document.querySelector("#newTask-Form").addEventListener("submit", (event) => {
         event.preventDefault()
         const name = inputName.value;
-        const time = inputTime.value;
         
         if (!name){
             alert("Please fill out a task!");
         }
-        else if (!time){
-            alert("Please fill out a time!");
-        }
+
         else{
             const taskContent = document.createElement('div');
 
