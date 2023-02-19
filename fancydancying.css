@@ -7,7 +7,7 @@ body {
 
 h2 {
     color: black;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     border: 2px dotted black;
     border-radius: 12px;
@@ -17,27 +17,14 @@ h2 {
     position: relative;
 }
 
-
-.titles {
-    display: flex;
-    background: white;
-    justify-content: center;
-    margin-right: 550px;
-    margin-left: 550px;
-}
-
-
-.titles > div{
-    background-color: peru;
-    margin: 20px;
-    padding: 15px;
-    font-size: 30px;
-}
-
 .newtasks {
     color: black;
+    text-align: center;
 }
 
 .tasksleft {
     color: black;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
 }
