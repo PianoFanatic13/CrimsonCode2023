@@ -20,11 +20,10 @@ h2 {
 
 .titleContainer {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     color: black;
     font-size: 60px;
     text-shadow: 3px 3px 9px rgb(254, 157, 173);
-    padding: 2px 2px;
 }
 
 
@@ -41,4 +40,14 @@ h2 {
     text-align: center;
     font-size: 35px;
     text-decoration: underline;
+}
+
+#newTask-Form {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.taskList {
+    text-align: center;
+    font-size: 25px;
 }

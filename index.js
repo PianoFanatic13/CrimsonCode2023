@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
 
             const editContent = document.createElement('button');
             editContent.classList.add('edit');
-            editContent.innerText = '+';
+            editContent.innerText = '+x';
 
             const delContent = document.createElement('button');
             delContent.classList.add('delete');
