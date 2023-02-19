@@ -10,25 +10,31 @@ window.addEventListener('load', () => {
         const name = inputName.value;
         const time = inputTime.value;
         
-        const taskContent = document.createElement('div');
+        if (!name){
+            alert("Please fill out a task!");
+        }
+        else{
+            const taskContent = document.createElement('div');
 
-        const textBox = document.createElement('input');
-        textBox.classList.add('text');
-        textBox.id = numTasks;
-        textBox.type = "text";
-        textBox.value = name;
-        textBox.setAttribute('readonly', 'readonly');
+            const textBox = document.createElement('input');
+            textBox.classList.add('text');
+            textBox.id = numTasks;
+            textBox.type = "text";
+            textBox.value = name;
+            textBox.setAttribute('readonly', 'readonly');
 
-        const editContent = document.createElement('button');
-        editContent.value = '+';
-        editContent.classList.add('text');
-        
+            const editContent = document.createElement('button');
+            editContent.classList.add('edit');
+            editContent.innerText = '+';
+            
+            
 
-        taskContent.append(textBox);
-        taskContent.append(editContent);
+            taskContent.append(textBox);
+            taskContent.append(editContent);
 
-        tasklist.appendChild(taskContent);
+            tasklist.appendChild(taskContent);
 
-        numTasks++;
+            numTasks++;
+        }
     });
 });
