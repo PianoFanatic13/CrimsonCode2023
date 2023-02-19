@@ -18,44 +18,32 @@
     <div class="tasksleft">Tasks Left</div>
     <div class="newtasks">New Task</div>
    
-        
+            
     <div class="newTask">
         
         <div>
             <form id="newTask-Form">
-                <div class="Entertaskname">
+                <div>
                     <input 
                     type="text"
-                    name="newTask-Name"
-                    id="newTask-Input"
+                    id="newTask-Name"
                     placeholder="Enter task name"/>
                 </div>
                 <div>
-                    <p>Select category</p>
-                    <select name="newTask-Category" id="newTask-Input">
-                        <option value="notecards">Notecards</option>
-                        <option value="quiz">Quiz</option>
-                        <option value="break">Break</option>
-                    </select>
-                </div>
-                <div>
                     <input 
-                        id="newTask-Input"
-                        name="newTask-Time"
+                        id="newTask-Time"
                         type="number"
                         min="0"
                         placeholder="Number of minutes"/>
                         
                 </div>
                 <div>
-                    <input 
-                    type="submit" 
-                    id="newTask-Submit"
-                    value="Add a task"/>
+                    <button id="addTask" onclick="main()">Add new task</button>
                 </div>
             </form>
         </div>
     </div>
+    
     
     <div class="taskList">
         
@@ -78,6 +66,7 @@
             </div>
         </div>    
     </div>
+
 
     
     <script src="index.js"></script>
