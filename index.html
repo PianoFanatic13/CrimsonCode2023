@@ -15,11 +15,17 @@
 
 <body>
     <h2> Study4U </h2>
+    <div class="titles">
+        <div>New Task</div>
+        <div>Tasks Left</div>
+    </div>
+   
+        
     <div class="newTask">
-        <h2>Create a new task</h2>
+        
         <div>
-            <form id="newTask-Form">
-                <div>
+            <form id="newTask-Form" action="newTask()">
+                <div class="Entertaskname">
                     <input 
                     type="text"
                     name="newTask-Name"
@@ -54,7 +60,7 @@
     </div>
     
     <div class="taskList">
-        <h2>Task to be completed</h2>
+        
 
         <div id="tasks">
             <div class="task">
