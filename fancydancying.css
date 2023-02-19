@@ -20,6 +20,9 @@ h2 {
 .newtasks {
     color: black;
     text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-decoration: rgb(255, 178, 191) wavy underline;
 }
 
 .tasksleft {
