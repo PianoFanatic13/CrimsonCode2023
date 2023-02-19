@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <div class="titleContainer">
-        <h2>Study4You</h2>
+        <h2><div class="titleContainer">Study4You</div></h2>
         <p>
             <a href="index.html">To-Do</a>
         </p>
@@ -26,8 +25,18 @@
             <button id="nextCard">➡</button>
         </div>
         <div id="displayNoteCard">
-            <body onload="newCard()"></body>
-            <!--Where notecard data is displayed-->
+            <form>
+                <input 
+                id="addTerm"
+                type="text"
+                placeholder="Enter a term/question"
+                />
+                <input
+                id="saveTerm"
+                type="button"
+                value="💾"
+                />
+            </form>
         </div>
 
     </div>
