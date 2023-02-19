@@ -13,3 +13,18 @@ h2 {
 }
 
 
+.titles {
+    display: flex;
+    background: white;
+    justify-content: center;
+    margin-right: 550px;
+    margin-left: 550px;
+}
+
+
+.titles > div{
+    background-color: peru;
+    margin: 20px;
+    padding: 15px;
+    font-size: 30px;
+}
