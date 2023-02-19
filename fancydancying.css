@@ -1,9 +1,3 @@
-/*
-body {
-    background-color: lightblue;
-    position: relative;
-}
-*/
 body {
     height: 1080px;
     background-color: rgb(189, 74, 189); /* For browsers that do not support gradients */
@@ -33,7 +27,7 @@ h2 {
 #newtasks {    
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    background-color: lightpink;
+    background-color: rgb(216, 133, 145);
 }
 
 .taskformat {
@@ -42,7 +36,7 @@ h2 {
     font-size: 35px;
     text-decoration: underline;
 
-    background-color: lightpink;
+    background-color: rgb(216, 133, 145);
 
     margin-left: 500px;
     margin-right: 500px;    
@@ -57,7 +51,7 @@ h2 {
 #newTask-Form {
     text-align: center;
 
-    background-color: lightpink;
+    background-color: rgb(216, 133, 145);
     padding-top: 25px;
     padding-bottom: 25px;
 
