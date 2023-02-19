@@ -3,8 +3,9 @@ function main()
     const tasklist = document.querySelector("#tasks")
     const inputName = document.querySelector("#newTask-Name");
     const inputTime = document.querySelector("#newTask-Time");
+    let numTasks = 0;
     
-    document.querySelector("#newTask-Form").addEventListener("submit", function(event){
+    document.querySelector("#newTask-Form").addEventListener("click", function(event){
         event.preventDefault()
         const name = inputName.value;
         const time = inputTime.value;
@@ -13,10 +14,15 @@ function main()
 
         const textBox = document.createElement('input');
         textBox.classList.add('text');
+        textBox.id = numTasks;
         textBox.type = "text";
         textBox.value = name;
         textBox.setAttribute('readonly', 'readonly');
 
-        tasklist.appendChild(textBox);
+        taskContent.append(textBox);
+
+        tasklist.appendChild(taskContent);
+
+        numTasks++;
       });
 }
