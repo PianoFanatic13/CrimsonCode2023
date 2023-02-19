@@ -1,11 +1,11 @@
-function main()
-{
+window.addEventListener('load', () => {
+
     const tasklist = document.querySelector("#tasks")
     const inputName = document.querySelector("#newTask-Name");
     const inputTime = document.querySelector("#newTask-Time");
     let numTasks = 0;
     
-    document.querySelector("#newTask-Form").addEventListener("click", function(event){
+    document.querySelector("#newTask-Form").addEventListener("submit", (event) => {
         event.preventDefault()
         const name = inputName.value;
         const time = inputTime.value;
@@ -19,10 +19,16 @@ function main()
         textBox.value = name;
         textBox.setAttribute('readonly', 'readonly');
 
+        const editContent = document.createElement('button');
+        editContent.value = '+';
+        editContent.classList.add('text');
+        
+
         taskContent.append(textBox);
+        taskContent.append(editContent);
 
         tasklist.appendChild(taskContent);
 
         numTasks++;
-      });
-}
+    });
+});
