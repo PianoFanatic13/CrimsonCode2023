@@ -1,4 +1,4 @@
-const tasklist = document.querySelector("#tasks")
+const tasklist = document.querySelector("#tasks");
 const inputName = document.querySelector("#newTask-Name");
 let numTasks = 0;
 
