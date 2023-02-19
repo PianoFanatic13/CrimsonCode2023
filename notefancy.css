@@ -33,3 +33,17 @@
 a:link {
     text-decoration: none;
 }
+
+h1 {
+    text-align: center;
+}
+
+.leftrightbuttoncontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#displayNoteCard {
+    display: flex;
+    justify-content: center;
+}
