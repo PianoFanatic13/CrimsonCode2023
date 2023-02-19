@@ -1,0 +1,35 @@
+#todo-link2 {
+    background-color:rgb(54, 87, 162);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;   
+    font-size: 40px;
+    align-self: center;
+}
+
+#notecards2{
+    background-color:rgb(54, 87, 162);
+    text-align: right;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    align-self: center;
+}
+
+#spaces2 {
+    opacity: 0;
+    font-size: 5px;
+    flex-grow: 6;
+}
+
+#space2 {
+    opacity: 0;
+    font-size: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
