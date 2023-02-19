@@ -179,7 +179,7 @@ a:link {
 
 .timerbuttoncontainer {
     display: flex;
-    justify-items: center;
+    justify-items: right;
 }
 
 #start {
@@ -197,6 +197,6 @@ a:link {
 
 #timerthing {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 60px;
 }
