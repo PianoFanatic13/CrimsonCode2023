@@ -18,16 +18,17 @@
     <div class="newTask">
         <h2>Create a new task</h2>
         <div>
-            <form id="newTask-Form" action="newTask()">
+            <form id="newTask-Form">
                 <div>
                     <input 
                     type="text"
+                    name="newTask-Name"
                     id="newTask-Input"
                     placeholder="Enter task name"/>
                 </div>
                 <div>
                     <p>Select category</p>
-                    <select name="categories" id="newTask-Category">
+                    <select name="newTask-Category" id="newTask-Input">
                         <option value="notecards">Notecards</option>
                         <option value="quiz">Quiz</option>
                         <option value="break">Break</option>
@@ -35,7 +36,8 @@
                 </div>
                 <div>
                     <input 
-                        id="newTask-Time"
+                        id="newTask-Input"
+                        name="newTask-Time"
                         type="number"
                         min="0"
                         placeholder="Number of minutes"/>
@@ -50,6 +52,7 @@
             </form>
         </div>
     </div>
+    
     <div class="taskList">
         <h2>Task to be completed</h2>
 
@@ -73,6 +76,6 @@
     </div>
 
     
-
+    <script src="index.js"></script>
 </body>
 </html>
