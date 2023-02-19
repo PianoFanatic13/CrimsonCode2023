@@ -13,6 +13,9 @@ window.addEventListener('load', () => {
         if (!name){
             alert("Please fill out a task!");
         }
+        else if (!time){
+            alert("Please fill out a time!");
+        }
         else{
             const taskContent = document.createElement('div');
 
@@ -26,11 +29,15 @@ window.addEventListener('load', () => {
             const editContent = document.createElement('button');
             editContent.classList.add('edit');
             editContent.innerText = '+';
-            
-            
 
+            const delContent = document.createElement('button');
+            delContent.classList.add('delete');
+            delContent.innerText = '-';
+
+            
             taskContent.append(textBox);
             taskContent.append(editContent);
+            taskContent.append(delContent);
 
             tasklist.appendChild(taskContent);
 
