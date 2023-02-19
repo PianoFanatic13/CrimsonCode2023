@@ -5,7 +5,7 @@ body {
 }
 */
 body {
-    height: 990px;
+    height: 1080px;
     background-color: rgb(189, 74, 189); /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, rgb(189, 74, 189), rgb(127, 213, 223));
 }
@@ -51,7 +51,7 @@ h2 {
 
 
 #tasks {    
-    padding-bottom: 920px
+    padding-bottom: 750px
 }
 
 
