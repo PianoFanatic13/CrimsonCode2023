@@ -1,6 +1,6 @@
 function newTask()
 {
-    const category = document.getElementsByName("newTask-Category").values;
-    alert(category);
-    console.log(category);
+    const category = document.querySelector("#newTask-Category");
+    alert(category.value);
+    console.log(category.value);
 }
