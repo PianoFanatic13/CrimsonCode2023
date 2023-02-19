@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notecards</title>
+    <title>Study4You</title>
     <link rel="stylesheet" type="text/css" href="fancydancying.css" />
     <link rel="stylesheet" type="text/css" href="notefancy.css" />
 </head>
@@ -19,20 +19,18 @@
             <a href="notecard.html">Notecards</a>
         </p>
     </div>
-    <div class="displayNoteCard">
+    <div>
+        <h1>Notecards</h1>
         <div>   
-            <button onclick="prevCard()">⬅</button>
-            <button onclick="nextCard()">➡</button>
+            <button id="prevCard">⬅</button>
+            <button id="nextCard">➡</button>
         </div>
-        <div>
-            <form id="noteCard">
-                <input
-                type="text"
-                id="newNoteCard"
-                placeholder="Enter a term/question"/>
-            </form>
+        <div id="displayNoteCard">
+            <body onload="newCard()"></body>
+            <!--Where notecard data is displayed-->
         </div>
 
     </div>
+    <script src="notecard.js"></script>
 </body>
 </html>
