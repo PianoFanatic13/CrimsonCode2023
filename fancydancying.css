@@ -1,31 +1,58 @@
-body {
-    height: 1080px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ } 
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(189, 74, 189); /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, rgb(189, 74, 189), rgb(127, 213, 223));
-}
+  }
 
-h2 {
-    display: inline-flex; 
-    justify-content: center;
-    box-pack: center;
-    text-align: center;
-    color: black;
-    font-size: 65px;
-    border: 2px dotted black;
-    border-radius: 12px;
-    position: relative;
-}
-
-.titleContainer {
+  .navContainer {
+    margin: 0px auto;
     display: flex;
-    justify-content: left;
-    color: black;
-    font-size: 60px;
-}
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #456d96;
+    height: 80px;
+  }
 
+  nav {
+    display: flex;
+  }
 
+  nav ul {
+    display: flex;
+    margin-right: 20px;
+  }
 
-#todo-link {
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    margin: 0px 10px; 
+  }
+
+  nav ul li a:hover {
+    background-color: rgb(216, 133, 145);
+  }
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  #even-columns{
+    margin-top: 100px;
+  }
+
+  #todo-link {
     background-color:rgb(71, 106, 188);
     padding-top: 5px;
     padding-left: 10px;
@@ -70,8 +97,6 @@ a:link {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     background-color: rgb(216, 133, 145);
-    font-size: 50px;
-    padding-top: 12px;
 }
 
 .taskformat {
@@ -81,24 +106,15 @@ a:link {
     text-decoration: underline;
 
     background-color: rgb(216, 133, 145);
+/*
+    margin-left: 500px;
+    margin-right: 500px;   */ 
 }
-
 
 #tasks {    
-    padding-bottom: 740px;
-    height: 32px;
-    font-size: 18px;
+    padding-bottom: 500px
 }
 
-#addTask {
-    height: 37px;
-    font-size: 22px;
-}
-
-#newTask-Name {
-    height: 37px;
-    font-size: 22px;
-}
 
 #newTask-Form {
     justify-content: center;
@@ -106,11 +122,9 @@ a:link {
     background-color: rgb(216, 133, 145);
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-#non-completed_tasks {
-    margin-top: 25px;
-    font-size: 40px;
+/*
+    margin-left: 500px;
+    margin-right: 500px;  */  
 }
 
 .taskList {
@@ -140,6 +154,7 @@ a:link {
 
 #time-minutes {
     font-size: 40px;
+    margin-left: 12px;
 }
 
 #time-seconds {
@@ -164,6 +179,7 @@ a:link {
     width: 75px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
     text-align: center;
 }
 
@@ -186,7 +202,7 @@ a:link {
     margin-right: 50px;
     width: 65px;
     height: 65px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #reset {
@@ -195,8 +211,6 @@ a:link {
     font-size: 40px;
 }
 
-#timerthing {
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
+.newTask {
+    margin-top: 100px
 }
