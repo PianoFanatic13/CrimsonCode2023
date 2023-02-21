@@ -76,6 +76,7 @@ function timer(){
         minute.value--;
     } else if(hour.value != 0 && minute.value == 0){
         minute.value = 59;
+        second.value = 59
         hour.value--;
     }
     return;
