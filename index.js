@@ -75,7 +75,7 @@ function timer(){
         second.value = 59;
         minute.value--;
     } else if(hour.value != 0 && minute.value == 0){
-        minute.value = 60;
+        minute.value = 59;
         hour.value--;
     }
     return;
@@ -107,6 +107,7 @@ reset.addEventListener('click', function(){
     hour.value = 0;
     minute.value = 0;
     second.value = 0;
+    document.getElementById('start').innerText = "▶";
     //calls the function for when reset button is called
     stopInterval()
 })
